@@ -1,0 +1,37 @@
+.labelBadge {
+    background-color: #f2dea8;
+    font-size: 0.75rem;
+    padding: 5px 5px 5px 10px;
+    border-radius: 5px;
+    position: relative;
+    width: 125px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #9a8c6b;
+    font-weight: 500;
+}
+
+.labelBadge button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    color: #9a8c6b;
+    font-weight: 500;
+    margin-block-start: -2px;
+}
+
+.labelBadge::after {
+    display: block;
+    content: '';
+    background-color: #f2dea8;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    position: absolute;
+    right: -6px;
+    bottom: 3px;
+    transform: rotate(45deg);
+    z-index: -1
+}

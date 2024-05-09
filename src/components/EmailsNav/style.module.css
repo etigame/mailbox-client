@@ -1,0 +1,122 @@
+.emailsNav {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px 55px 10px;
+    border-left: 1px solid #e6e9ec;
+    border-radius: var(--border-radius);
+}
+
+.mailboxHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-block-end: 15px;
+    border-bottom: 1px solid #e6e9ec;
+}
+
+.mailboxHeader > h1 {
+    font-weight: 500;
+}
+
+.back {
+    padding: 10px;
+    color: var(--secondary-color-dark);
+    background-color: var(--secondary-color-light);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-end: 10px;
+}
+
+.navsWrapper {
+    overflow-y: hidden;
+    margin-inline-end: 4px;
+}
+
+.navsWrapper:hover {
+    overflow-y: scroll;
+    margin-inline-end: 0;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--secondary-color-bg);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+  }
+
+.emailTypes {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 20px;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--secondary-color-dark);
+    font-weight: 500;
+    padding: 10px 0px;
+}
+
+.top > span:first-child {
+    flex-grow: 1;
+}
+
+.top .addLabel {
+    border: none;
+    background-color: var(--primary-color-bg);
+    color: var(--primary-color);
+    border-radius: var(--border-radius);
+    height: 30px;
+    width: 30px;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.top .more {
+    border: none;
+    background-color: transparent;
+    color: var(--secondary-color-dark);
+    height: 30px;
+    width: 30px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.label {
+    padding: 8px 0px;
+    color: #000;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-weight: 400;
+}
+
+.label .labelBadge {
+    font-size: 25px;
+    margin-inline-end: 10px;
+}

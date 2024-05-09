@@ -1,0 +1,72 @@
+.emailLi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.emailLi:hover {
+    box-shadow: 0px 4px 4px 0px #00000040;
+    transition: 0.1s;
+}
+
+.emailLi:has(.unread) {
+    border-radius: 5px;
+    background-color: #fff;
+    /* box-shadow: 0px 4px 4px 0px #00000040; */
+}
+
+.emailLi img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.emailLi .content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+.emailLi .content .fullName {
+    font-weight: 700;
+    color: #000;
+}
+
+.emailLi .content .message {
+    font-size: 0.75rem;
+    color: var(--secondary-color-dark);
+    font-weight: 500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 235px;
+}
+
+.emailLi .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    color: var(--secondary-color-dark);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.emailLi .details > :nth-child(2) {
+    color: #d9dde8;
+    font-size: 0.85rem;
+}
+
+.emailLi .details .unread {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.emailLi .details .favorite {
+    color: var(--primary-color);
+}

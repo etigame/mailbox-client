@@ -1,0 +1,14 @@
+.newMsgBtn {
+    background-color: var(--primary-color);
+    margin-block-start: 10px;
+    margin-block-end: 20px;
+    border-radius: var(--border-radius);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.newMsgBtn > span {
+    margin-inline-start: 20px;
+}

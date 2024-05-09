@@ -1,0 +1,146 @@
+[
+  {
+    "chat": {
+      "_id": "6613ba07b71ad0460cfa5c5e",
+      "subject": "Hello, how are you?",
+      "msg": [
+        {
+          "from": "6613ba07b71ad0460cfa5c53",
+          "date": "2024-03-21T10:00:00.000Z",
+          "content": "Greeting and you??",
+          "_id": "6613ba07b71ad0460cfa5c5f"
+        },
+        {
+          "from": "6613ba07b71ad0460cfa5c51",
+          "date": "2024-03-21T10:08:00.000Z",
+          "content": "Fine, and you?",
+          "_id": "6613ba07b71ad0460cfa5c60"
+        },
+        {
+          "from": "6613ba07b71ad0460cfa5c5c",
+          "date": "2024-03-21T10:24:00.000Z",
+          "content": "Walla Sababa !!",
+          "_id": "6613ba07b71ad0460cfa5c61"
+        }
+      ],
+      "members": [
+        {
+          "_id": "6613ba07b71ad0460cfa5c51",
+          "fullName": "Moshe Cohen",
+          "avatar": "https://avataaars.io/?avatarStyle=Circle&topType=ShortHairTheCaesar&accessoriesType=Sunglasses&hairColor=Auburn&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Side&eyebrowType=RaisedExcitedNatural&mouthType=Smile&skinColor=Yellow"
+        },
+        {
+          "_id": "6613ba07b71ad0460cfa5c53",
+          "fullName": "Haim Levi",
+          "avatar": "https://avataaars.io/?avatarStyle=Circle&topType=LongHairFro&accessoriesType=Kurt&hairColor=SilverGray&facialHairType=BeardMedium&facialHairColor=BrownDark&clotheType=BlazerShirt&eyeType=Wink&eyebrowType=RaisedExcitedNatural&mouthType=Sad&skinColor=Light"
+        },
+        {
+          "_id": "6613ba07b71ad0460cfa5c57",
+          "fullName": "Sivan Tov",
+          "avatar": "https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+        },
+        {
+          "_id": "6613ba07b71ad0460cfa5c5c",
+          "fullName": "Smadar Omer",
+          "avatar": "https://avataaars.io/?avatarStyle=Circle&topType=LongHairNotTooLong&accessoriesType=Blank&hairColor=Blonde&facialHairType=Blank&clotheType=ShirtScoopNeck&clotheColor=PastelGreen&eyeType=Wink&eyebrowType=RaisedExcitedNatural&mouthType=Smile&skinColor=Tanned"
+        }
+      ],
+      "lastDate": "2024-03-21T10:24:00.000Z",
+      "__v": 0
+    },
+    "isSent": true,
+    "isRecieved": true,
+    "isRead": false,
+    "labels": [],
+    "_id": "6613ba07b71ad0460cfa5c63"
+  },
+  {
+    "chat": {
+      "_id": "6613ba08b71ad0460cfa5c77",
+      "subject": "Meeting Reminder",
+      "msg": [
+        {
+          "from": "6613ba07b71ad0460cfa5c53",
+          "date": "2024-04-08T11:00:00.000Z",
+          "content": "Just a reminder about our meeting tomorrow.",
+          "_id": "6613ba08b71ad0460cfa5c78"
+        },
+        {
+          "from": "6613ba07b71ad0460cfa5c55",
+          "date": "2024-04-08T11:05:00.000Z",
+          "content": "Thanks for the heads-up. Looking forward to it!",
+          "_id": "6613ba08b71ad0460cfa5c79"
+        }
+      ],
+      "members": [
+        {
+          "_id": "6613ba07b71ad0460cfa5c53",
+          "fullName": "Haim Levi",
+          "avatar": "https://avataaars.io/?avatarStyle=Circle&topType=LongHairFro&accessoriesType=Kurt&hairColor=SilverGray&facialHairType=BeardMedium&facialHairColor=BrownDark&clotheType=BlazerShirt&eyeType=Wink&eyebrowType=RaisedExcitedNatural&mouthType=Sad&skinColor=Light"
+        },
+        {
+          "_id": "6613ba07b71ad0460cfa5c55",
+          "fullName": "Mor Noam",
+          "avatar": "https://avataaars.io/?avatarStyle=Circle&topType=WinterHat2&accessoriesType=Prescription01&hatColor=PastelGreen&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+        }
+      ],
+      "lastDate": "2024-04-08T11:05:00.000Z",
+      "__v": 0
+    },
+    "isSent": true,
+    "isRecieved": false,
+    "isRead": false,
+    "labels": [],
+    "_id": "6613ba08b71ad0460cfa5c7f"
+  },
+  {
+    "chat": {
+      "_id": "6613ba09b71ad0460cfa5c94",
+      "subject": "Team Building Event",
+      "msg": [
+        {
+          "from": "6613ba07b71ad0460cfa5c53",
+          "date": "2024-04-08T14:00:00.000Z",
+          "content": "Let's organize a team-building event next month.",
+          "_id": "6613ba09b71ad0460cfa5c95"
+        },
+        {
+          "from": "6613ba07b71ad0460cfa5c5a",
+          "date": "2024-04-08T14:15:00.000Z",
+          "content": "That sounds like a fantastic idea! Any suggestions?",
+          "_id": "6613ba09b71ad0460cfa5c96"
+        },
+        {
+          "from": "6613ba07b71ad0460cfa5c5c",
+          "date": "2024-04-08T14:30:00.000Z",
+          "content": "I'll check some options and get back to you.",
+          "_id": "6613ba09b71ad0460cfa5c97"
+        }
+      ],
+      "members": [
+        {
+          "_id": "6613ba07b71ad0460cfa5c53",
+          "fullName": "Haim Levi",
+          "avatar": "https://avataaars.io/?avatarStyle=Circle&topType=LongHairFro&accessoriesType=Kurt&hairColor=SilverGray&facialHairType=BeardMedium&facialHairColor=BrownDark&clotheType=BlazerShirt&eyeType=Wink&eyebrowType=RaisedExcitedNatural&mouthType=Sad&skinColor=Light"
+        },
+        {
+          "_id": "6613ba07b71ad0460cfa5c5a",
+          "fullName": "Roni Malkan",
+          "avatar": "https://avataaars.io/?avatarStyle=Circle&topType=Eyepatch&facialHairType=BeardMajestic&facialHairColor=Platinum&clotheType=ShirtScoopNeck&clotheColor=PastelGreen&eyeType=Dizzy&eyebrowType=RaisedExcitedNatural&mouthType=Smile&skinColor=Tanned"
+        },
+        {
+          "_id": "6613ba07b71ad0460cfa5c5c",
+          "fullName": "Smadar Omer",
+          "avatar": "https://avataaars.io/?avatarStyle=Circle&topType=LongHairNotTooLong&accessoriesType=Blank&hairColor=Blonde&facialHairType=Blank&clotheType=ShirtScoopNeck&clotheColor=PastelGreen&eyeType=Wink&eyebrowType=RaisedExcitedNatural&mouthType=Smile&skinColor=Tanned"
+        }
+      ],
+      "lastDate": "2024-04-08T14:30:00.000Z",
+      "__v": 0
+    },
+    "isSent": true,
+    "isRecieved": false,
+    "isRead": false,
+    "labels": [],
+    "_id": "6613ba09b71ad0460cfa5c9b"
+  }
+]

@@ -1,0 +1,19 @@
+.emailTitle {
+    padding: 18px 0;
+}
+
+.emailTitle > * {
+    margin-bottom: 10px;
+}
+
+.emailTitle p {
+    font-size: 0.75rem;
+    color: var(--secondary-color-dark);
+    font-weight: 500;
+}
+
+.emailTitle h1 {
+    font-size: 1.75rem;
+    color: #000;
+    font-weight: 500;
+}

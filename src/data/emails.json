@@ -1,0 +1,123 @@
+[
+    {
+      "fullName": "John Doe",
+      "imageUrl": "https://randomuser.me/api/portraits/men/1.jpg",
+      "message": "Hey there! How's your day going? Hope it's fantastic!",
+      "timestamp": 1715119039181,
+      "isFavorite": false,
+      "isRead": true
+    },
+    {
+      "fullName": "Alice Smith",
+      "imageUrl": "https://randomuser.me/api/portraits/women/2.jpg",
+      "message": "Just wanted to say hi and see how you're doing. Miss you!",
+      "timestamp": 1620310500000,
+      "isFavorite": true,
+      "isRead": false
+    },
+    {
+      "fullName": "David Brown",
+      "imageUrl": "https://randomuser.me/api/portraits/men/3.jpg",
+      "message": "Quick question: Do you prefer coffee or tea in the morning?",
+      "timestamp": 1620313200000,
+      "isFavorite": true,
+      "isRead": true
+    },
+    {
+      "fullName": "Emma Johnson",
+      "imageUrl": "https://randomuser.me/api/portraits/women/4.jpg",
+      "message": "Hope you're having a great day! Let's catch up soon.",
+      "timestamp": 1620315600000,
+      "isFavorite": false,
+      "isRead": false
+    },
+    {
+      "fullName": "Michael Wilson",
+      "imageUrl": "https://randomuser.me/api/portraits/men/5.jpg",
+      "message": "Just finished a book you might like. I'll lend it to you!",
+      "timestamp": 1620318300000,
+      "isFavorite": true,
+      "isRead": true
+    },
+    {
+      "fullName": "Sophia Lee",
+      "imageUrl": "https://randomuser.me/api/portraits/women/6.jpg",
+      "message": "Hey! How about grabbing lunch together tomorrow?",
+      "timestamp": 1620321000000,
+      "isFavorite": false,
+      "isRead": false
+    },
+    {
+      "fullName": "Matthew Garcia",
+      "imageUrl": "https://randomuser.me/api/portraits/men/7.jpg",
+      "message": "Need your opinion on something. Can we chat later?",
+      "timestamp": 1620324600000,
+      "isFavorite": false,
+      "isRead": true
+    },
+    {
+      "fullName": "Olivia Martinez",
+      "imageUrl": "https://randomuser.me/api/portraits/women/8.jpg",
+      "message": "Remember that concert we talked about? Got the tickets!",
+      "timestamp": 1620327900000,
+      "isFavorite": true,
+      "isRead": false
+    },
+    {
+      "fullName": "Ethan Taylor",
+      "imageUrl": "https://randomuser.me/api/portraits/men/9.jpg",
+      "message": "Hey! Just checking in to see how everything's going.",
+      "timestamp": 1620330000000,
+      "isFavorite": true,
+      "isRead": true
+    },
+    {
+      "fullName": "Ava Anderson",
+      "imageUrl": "https://randomuser.me/api/portraits/women/10.jpg",
+      "message": "Can't wait for the weekend! Any plans?",
+      "timestamp": 1620333600000,
+      "isFavorite": false,
+      "isRead": false
+    },
+    {
+      "fullName": "William Thomas",
+      "imageUrl": "https://randomuser.me/api/portraits/men/11.jpg",
+      "message": "Just wanted to drop by and say hello! How's everything?",
+      "timestamp": 1620336900000,
+      "isFavorite": true,
+      "isRead": true
+    },
+    {
+      "fullName": "Mia Rodriguez",
+      "imageUrl": "https://randomuser.me/api/portraits/women/12.jpg",
+      "message": "Thinking of trying out that new restaurant. Wanna join?",
+      "timestamp": 1620340200000,
+      "isFavorite": false,
+      "isRead": false
+    },
+    {
+      "fullName": "James White",
+      "imageUrl": "https://randomuser.me/api/portraits/men/13.jpg",
+      "message": "Hey! Haven't heard from you in a while. Let's catch up!",
+      "timestamp": 1620342000000,
+      "isFavorite": true,
+      "isRead": true
+    },
+    {
+      "fullName": "Charlotte Harris",
+      "imageUrl": "https://randomuser.me/api/portraits/women/14.jpg",
+      "message": "Remember that project we discussed? Making progress!",
+      "timestamp": 1620345600000,
+      "isFavorite": false,
+      "isRead": false
+    },
+    {
+      "fullName": "Daniel Clark",
+      "imageUrl": "https://randomuser.me/api/portraits/men/15.jpg",
+      "message": "Hey! Just wanted to drop a quick hello. Hope you're doing well!",
+      "timestamp": 1620348900000,
+      "isFavorite": true,
+      "isRead": true
+    }
+  ]
+  

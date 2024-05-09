@@ -1,0 +1,18 @@
+.EmailType {
+    color: var(--secondary-color-dark);
+    display: flex;
+    flex-direction: row;
+    padding: 7px 10px;
+    align-items: center;
+}
+
+.EmailType > span {
+    color: #000;
+    margin-inline-start: 20px;
+    font-weight: 500;
+    flex-grow: 1;
+}
+
+.EmailType:hover > *:not(div) {
+    color: var(--primary-color);
+}

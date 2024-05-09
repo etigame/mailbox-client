@@ -1,0 +1,140 @@
+.emailPage {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 10px 20px;
+}
+
+.top {
+  height: 62px;
+  border-bottom: 1px solid #e6e9ec;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top .actions {
+  color: var(--secondary-color-dark);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.top .actions :nth-child(even) {
+  font-size: 1.3rem;
+}
+
+.top .actions > * {
+  cursor: pointer;
+}
+
+.top .actions > *:hover {
+  color: var(--primary-color);
+}
+
+.emailContainer {
+  flex-grow: 1;
+}
+
+.editContainer {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.textEditor {
+  border-radius: var(--border-radius);
+  border: 1px solid #e6e9ec;
+  display: flex;
+  flex-direction: column;
+}
+
+.textEditor textarea {
+  border: none;
+  font-weight: 500;
+  margin: 15px 10px 15px 20px;
+  resize: none;
+  outline: none;
+}
+
+.textEditor .actions {
+  border-top: 1px solid #e6e9ec;
+  color: var(--secondary-color-dark);
+  display: flex;
+  flex-direction: row;
+}
+
+.textEditor .actions > * {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+
+.textEditor .actions > * > * {
+  cursor: pointer;
+}
+
+.textEditor .actions > * > *:hover {
+  color: var(--primary-color);
+}
+
+.textEditor .actions .styleText {
+  border-right: 1px solid #e6e9ec;
+}
+
+.textEditor .actions .styleText > :nth-child(2) {
+  font-size: 1.25rem;
+}
+
+.textEditor .actions .styleParagraph {
+  flex-grow: 1;
+}
+
+.textEditor .actions .styleParagraph > :nth-child(1) {
+  font-size: 1.3rem;
+}
+
+.textEditor .actions .styleParagraph > :nth-child(2) {
+  font-size: 1.3rem;
+}
+
+.editContainerActions {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.editContainerActions section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    color: var(--secondary-color-dark);
+}
+
+.editContainerActions section > * {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.editContainerActions section > * > * {
+    cursor: pointer;
+}
+
+.editContainerActions section > * > *:hover {
+    color: var(--primary-color);
+}
+
+.rightActions > :nth-child(2) {
+    font-size: 1.5rem;
+}

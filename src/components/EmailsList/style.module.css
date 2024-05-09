@@ -1,0 +1,29 @@
+.emailsList {
+    background-color: var(--secondary-color-light);
+    border-radius: var(--border-radius);
+    width: 380px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    padding-block-end: 46px;
+}
+
+.top {
+    border-bottom: 1px solid #e6e9ec;
+    padding: 10px;
+    height: 62px;
+}
+
+.emailsContainer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow: hidden;
+    margin-inline-end: 4px;
+}
+
+.emailsContainer:hover {
+    overflow-y: scroll;
+    margin-inline-end: 0;
+}
