@@ -1,11 +1,17 @@
 import InputSearch from './InputSearch'
 import styles from './style.module.css'
-import { useContext } from 'react'
+import { useState, useContext, useEffect } from 'react'
 import DataContext from '../../context/DataContext'
 import EmailLi from './EmailLi'
 
 export default function EmailsList() {
   const { emails } = useContext(DataContext)
+  const [userChats, setUserChats] = useState([])
+
+  useEffect(() => {
+    fetch('https://mailbox-server.onrender.com/chat/inbox', {method: 'GET'}).then(res => res.json()).then(data => setUserChats(data))
+  }, [])
+
 
   return (
     <section className={styles.emailsList}>
@@ -13,8 +19,8 @@ export default function EmailsList() {
         <InputSearch />
       </section>
       <section className={styles.emailsContainer}>
-        {emails.map((email) => (
-          <EmailLi key={email.timestamp} email={email} />
+        {userChats.map((userChat) => (
+          <EmailLi key={userChat._id} userChat={userChat} />
         ))}
       </section>
     </section>

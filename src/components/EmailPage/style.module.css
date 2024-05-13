@@ -6,7 +6,7 @@
 }
 
 .top {
-  height: 62px;
+  padding: 18px 0;
   border-bottom: 1px solid #e6e9ec;
   display: flex;
   flex-direction: row;
@@ -36,6 +36,20 @@
 
 .emailContainer {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-inline-end: 4px;
+  padding-inline-end: 10px;
+}
+
+.emailContainer:hover {
+  overflow-y: scroll;
+  margin-inline-end: 0;
+}
+
+.emailContainer > :last-child {
+  border-bottom: 0;
 }
 
 .editContainer {

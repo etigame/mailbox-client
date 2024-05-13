@@ -22,7 +22,7 @@ export default function EmailsNav() {
       numOfEmails: 1,
     },
     {
-      title: 'Sent Emails',
+      title: 'Sent',
       icon: <BsFillSendFill />,
       href: '#',
       numOfEmails: 0,

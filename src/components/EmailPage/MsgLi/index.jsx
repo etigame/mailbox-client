@@ -1,19 +1,61 @@
 import styles from './style.module.css'
-import {useState} from 'react'
+import { useState } from 'react'
 
-export default function MsgLi() {
-  const [msg, setMsg] = useState({
-    fullName: 'John Doe',
-    imageUrl: 'https://randomuser.me/api/portraits/men/1.jpg',
-    message:
-      'Dear Moshe,Thank you for reaching out to inquire about the availability of our products. We are pleased to inform you that the item you are interested in is currently in stock and ready for purchase. You can place your order directly through our website https://practicum.workin.co.il  to make a purchase in person.Thank you for considering our products. Best regards, Aviad Derli, Customer Service Team',
-    timestamp: 1715119039181,
-    isFavorite: false,
-    isRead: true,
-  })
+export default function MsgLi({ userChat, singleMsg }) {
+  const { members } = userChat.chat
+  const { from, content, date } = singleMsg
+  const [isMsgOpen, setIsMsgOpen] = useState(false)
 
-  return (
-  <section className={styles.msgLi}>
-    
-  </section>)
+  const sender = members.find((member) => member._id === from)
+  const { avatar, fullName } = sender
+
+  const formatDate = () => {
+    const options = {
+      day: 'numeric',
+      month: 'numeric',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+    }
+
+    if (isMsgOpen) options.weekday = 'long'
+
+    const formattedDate = new Date(date).toLocaleDateString('en-US', options)
+
+    return formattedDate
+  }
+
+  if (isMsgOpen === true)
+    return (
+      <section
+        className={styles.msgLiOpen}
+        onClick={() => setIsMsgOpen(!isMsgOpen)}
+      >
+        <div className={styles.msgDetails}>
+          <div className={styles.senderDetails}>
+            <img src={avatar} alt="member-image" />
+            <h3>{fullName}</h3>
+          </div>
+          <p className={styles.date}>{formatDate()}</p>
+        </div>
+        <p>{content}</p>
+      </section>
+    )
+
+  if (isMsgOpen === false)
+    return (
+      <section
+        className={styles.msgLiClose}
+        onClick={() => setIsMsgOpen(!isMsgOpen)}
+      >
+        <section className={styles.left}>
+          <div className={styles.senderDetails}>
+            <img src={avatar} alt="member-image" />
+            <h3>{fullName}</h3>
+          </div>
+          <p className={styles.content}>{content}</p>
+        </section>
+        <p className={styles.date}>{formatDate()}</p>
+      </section>
+    )
 }

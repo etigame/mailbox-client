@@ -3,22 +3,27 @@ import { IoMdMail } from 'react-icons/io'
 import { FaStar } from 'react-icons/fa'
 import {NavLink} from 'react-router-dom'
 
-export default function EmailLi({email}) {
-    const {fullName, imageUrl, message, timestamp, isFavorite, isRead} = email
+export default function EmailLi({userChat}) {
+    const {isRead, chat} = userChat
+    const {subject, msg, members, lastDate} = chat
 
     const formatTime = () => {
-        const now = new Date().getTime()
-        if (now - 24*60*60 < timestamp) return `${String(new Date(timestamp).getHours()).padStart(2, '0')}:${String(new Date(timestamp).getMinutes()).padStart(2, '0')}`
+        const lastMsgTimestamp = new Date(`${lastDate}`).getTime()
 
-        else return `${String(new Date(timestamp).getDate()).padStart(2, '0')}.${String(new Date(timestamp).getMonth() + 1).padStart(2, '0')}`
+        if (Date.now() - 24*60*60*1000 < lastMsgTimestamp) return `${String(new Date(lastMsgTimestamp).getHours()).padStart(2, '0')}:${String(new Date(lastMsgTimestamp).getMinutes()).padStart(2, '0')}`
+
+        else return `${String(new Date(lastMsgTimestamp).getDate()).padStart(2, '0')}.${String(new Date(lastMsgTimestamp).getMonth() + 1).padStart(2, '0')}`
     }
+
+    const formatMembers = () => `${members[0].fullName}, ${members[1].fullName.split(' ')[0]}, +${members.length - 2}`
+        
 
     return (
         <NavLink className={styles.emailLi}>
-            <img src={imageUrl} alt="user-img" />
+            <img src={members[0].avatar} alt="user-img" />
             <div className={styles.content}>
-                <span className={styles.fullName}>{fullName}</span>
-                <span className={styles.message}>{message}</span>
+                <span className={styles.fullName}>{formatMembers()}</span>
+                <span className={styles.message}>{msg.find(msg => msg.date === lastDate).content}</span>
             </div>
             <div className={styles.details}>
                 <span className={styles.time}>{formatTime()}</span>

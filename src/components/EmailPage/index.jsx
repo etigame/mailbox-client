@@ -1,6 +1,6 @@
 import styles from './style.module.css'
 import LabelBadge from '../LabelBadge'
-import { useContext } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import DataContext from '../../context/DataContext'
 import { FaStar } from 'react-icons/fa'
 import { FaTrashCan } from 'react-icons/fa6'
@@ -21,11 +21,15 @@ import { GrOrderedList } from 'react-icons/gr'
 import { AiOutlineUnorderedList } from 'react-icons/ai'
 import { ImAttachment } from 'react-icons/im'
 import { FaImage } from 'react-icons/fa6'
-import { useState } from 'react'
 
 export default function EmailPage() {
+  const [userChat, setUserChat] = useState({})
 
-  return (
+  useEffect(() => {
+    fetch('https://mailbox-server.onrender.com/chat/inbox', {method: 'GET'}).then(res => res.json()).then(data => setUserChat(data[2]))
+  }, [])
+
+  if (userChat._id) return (
     <section className={styles.emailPage}>
       <section className={styles.top}>
         <LabelBadge />
@@ -37,8 +41,8 @@ export default function EmailPage() {
         </div>
       </section>
       <section className={styles.emailContainer}>
-        <EmailTitle />
-        <MsgLi />
+        <EmailTitle subject={userChat.chat.subject} lastDate={userChat.chat.lastDate}/>
+        {userChat.chat.msg.map(singleMsg => <MsgLi key={singleMsg._id} userChat={userChat} singleMsg={singleMsg} />)}
       </section>
       <section className={styles.editContainer}>
         <section className={styles.textEditor}>
