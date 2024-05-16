@@ -5,7 +5,7 @@ import {NavLink} from 'react-router-dom'
 
 export default function EmailLi({userChat}) {
     const {isRead, chat} = userChat
-    const {subject, msg, members, lastDate} = chat
+    const {subject, msg, members, lastDate, _id} = chat
 
     const formatTime = () => {
         const lastMsgTimestamp = new Date(`${lastDate}`).getTime()
@@ -15,11 +15,11 @@ export default function EmailLi({userChat}) {
         else return `${String(new Date(lastMsgTimestamp).getDate()).padStart(2, '0')}.${String(new Date(lastMsgTimestamp).getMonth() + 1).padStart(2, '0')}`
     }
 
-    const formatMembers = () => `${members[0].fullName}, ${members[1].fullName.split(' ')[0]}, +${members.length - 2}`
+    const formatMembers = () => `${members[0].fullName}, ${members[1].fullName.split(' ')[0]}${members[2]? `, +${members.length - 2}` : ''}`
         
 
     return (
-        <NavLink className={styles.emailLi}>
+        <NavLink className={styles.emailLi} to={_id}>
             <img src={members[0].avatar} alt="user-img" />
             <div className={styles.content}>
                 <span className={styles.fullName}>{formatMembers()}</span>

@@ -4,7 +4,7 @@ import styles from './style.module.css'
 
 export default function NewMsgBtn() {
   return (
-    <Link className={styles.newMsgBtn}>
+    <Link className={styles.newMsgBtn} to='newMessage'>
         <IoMdMail />
       <span>New message</span>
     </Link>

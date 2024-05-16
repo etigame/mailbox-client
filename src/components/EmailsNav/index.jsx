@@ -18,27 +18,27 @@ export default function EmailsNav() {
     {
       title: 'Inbox',
       icon: <HiMiniInboxArrowDown />,
-      href: '#',
+      href: 'inbox',
       numOfEmails: 1,
     },
     {
       title: 'Sent',
       icon: <BsFillSendFill />,
-      href: '#',
+      href: 'send',
       numOfEmails: 0,
     },
-    { title: 'Favorite', icon: <FaStar />, href: '#', numOfEmails: 0 },
-    { title: 'Draft', icon: <RiPencilFill />, href: '#', numOfEmails: 0 },
-    { title: 'Deleted', icon: <FaTrashCan />, href: '#', numOfEmails: 0 },
-    { title: 'More', icon: <IoIosArrowDown />, href: '#', numOfEmails: 0 },
+    { title: 'Favorite', icon: <FaStar />, href: 'favorite', numOfEmails: 0 },
+    { title: 'Draft', icon: <RiPencilFill />, href: 'draft', numOfEmails: 0 },
+    { title: 'Deleted', icon: <FaTrashCan />, href: 'deleted', numOfEmails: 0 },
+    { title: 'More', icon: <IoIosArrowDown />, href: 'more', numOfEmails: 0 },
   ]
 
   const labels = [
-    { title: 'Work', color: '#d0d3e3', href: '#' },
-    { title: 'Promising offers', color: '#f2dea8', href: '#' },
-    { title: 'Work in Progress', color: '#8edccf', href: '#' },
-    { title: 'In acceptance', color: '#b2e9ff', href: '#' },
-    { title: 'Read later', color: '#cdbfff', href: '#' },
+    { title: 'Work', color: '#d0d3e3', href: 'work' },
+    { title: 'Promising offers', color: '#f2dea8', href: 'offers' },
+    { title: 'Work in Progress', color: '#8edccf', href: 'progress' },
+    { title: 'In acceptance', color: '#b2e9ff', href: 'acceptance' },
+    { title: 'Read later', color: '#cdbfff', href: 'later' },
   ]
 
   return (
@@ -81,7 +81,7 @@ export default function EmailsNav() {
             <NavLink className={styles.label} to={label.href} key={label.title}>
               <MdLabel
                 className={styles.labelBadge}
-                style={{ color: `${label.color}` }}
+                style={{ color: label.color }}
               />
               <span>{label.title}</span>
             </NavLink>

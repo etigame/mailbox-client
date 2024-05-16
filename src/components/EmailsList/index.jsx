@@ -1,16 +1,16 @@
 import InputSearch from './InputSearch'
 import styles from './style.module.css'
-import { useState, useContext, useEffect } from 'react'
-import DataContext from '../../context/DataContext'
+import { useState, useEffect } from 'react'
+import {useParams} from 'react-router-dom'
 import EmailLi from './EmailLi'
 
 export default function EmailsList() {
-  const { emails } = useContext(DataContext)
   const [userChats, setUserChats] = useState([])
+  let { emailsFilter } = useParams()
 
   useEffect(() => {
-    fetch('https://mailbox-server.onrender.com/chat/inbox', {method: 'GET'}).then(res => res.json()).then(data => setUserChats(data))
-  }, [])
+    fetch(`https://mailbox-server.onrender.com/chat/${emailsFilter}`, {method: 'GET'}).then(res => res.json()).then(data => setUserChats(data))
+  }, [emailsFilter])
 
 
   return (

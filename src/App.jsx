@@ -1,26 +1,13 @@
-import EmailsList from './components/EmailsList'
-import EmailsNav from './components/EmailsNav'
-import MainNav from './components/MainNav'
-import { useState, useEffect } from 'react'
-import emailsDB from './data/emails.json'
-import DataContext from './context/DataContext'
-import EmailPage from './components/EmailPage'
+import MainRouting from './MainRouting'
+import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 
 export default function App() {
-  const [emails, setEmails] = useState([])
+  const navigate = useNavigate()
 
   useEffect(() => {
-    setEmails(emailsDB)
+    navigate('/emails/inbox')
   }, [])
 
-  return (
-    <section className="app">
-      <MainNav />
-      <EmailsNav />
-      <DataContext.Provider value={{emails}}>
-        <EmailsList />
-        <EmailPage />
-      </DataContext.Provider>
-    </section>
-  )
+  return <MainRouting />
 }

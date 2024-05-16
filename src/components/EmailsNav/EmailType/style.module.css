@@ -1,4 +1,4 @@
-.EmailType {
+.emailType {
     color: var(--secondary-color-dark);
     display: flex;
     flex-direction: row;
@@ -6,13 +6,21 @@
     align-items: center;
 }
 
-.EmailType > span {
+.emailType.active {
+    color: var(--primary-color);
+}
+
+.emailType > span {
     color: #000;
     margin-inline-start: 20px;
     font-weight: 500;
     flex-grow: 1;
 }
 
-.EmailType:hover > *:not(div) {
+.emailType.active > span {
+    color: var(--primary-color);
+}
+
+.emailType:hover > *:not(div) {
     color: var(--primary-color);
 }

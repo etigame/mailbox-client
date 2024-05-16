@@ -31,6 +31,11 @@
   align-items: center;
 }
 
+.navLinks > a.active {
+  color: var(--primary-color);
+  border-right: 2px solid var(--primary-color);
+}
+
 .navLinks > a:hover {
   border-right: 2px solid var(--primary-color);
 }
@@ -44,6 +49,11 @@
 }
 
 .navLinks > a:hover > div {
+  color: var(--primary-color);
+  background-color: var(--primary-color-bg);
+}
+
+.navLinks > a.active > div {
   color: var(--primary-color);
   background-color: var(--primary-color-bg);
 }

@@ -1,7 +1,6 @@
 import styles from './style.module.css'
 import LabelBadge from '../LabelBadge'
-import { useContext, useEffect, useState } from 'react'
-import DataContext from '../../context/DataContext'
+import { useEffect, useState } from 'react'
 import { FaStar } from 'react-icons/fa'
 import { FaTrashCan } from 'react-icons/fa6'
 import { IoMdPrint } from 'react-icons/io'
@@ -21,13 +20,18 @@ import { GrOrderedList } from 'react-icons/gr'
 import { AiOutlineUnorderedList } from 'react-icons/ai'
 import { ImAttachment } from 'react-icons/im'
 import { FaImage } from 'react-icons/fa6'
+import {useParams} from 'react-router-dom'
 
 export default function EmailPage() {
   const [userChat, setUserChat] = useState({})
+  const { emailsFilter, id } = useParams()
 
   useEffect(() => {
-    fetch('https://mailbox-server.onrender.com/chat/inbox', {method: 'GET'}).then(res => res.json()).then(data => setUserChat(data[2]))
-  }, [])
+    fetch(`https://mailbox-server.onrender.com/chat/${emailsFilter}`, {method: 'GET'}).then(res => res.json()).then(data => {
+      const selectedChat = data.find(uc => uc.chat._id === id)
+      setUserChat(selectedChat)
+    })
+  }, [id])
 
   if (userChat._id) return (
     <section className={styles.emailPage}>

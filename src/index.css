@@ -24,8 +24,3 @@ a {
   --border-radius: 10px;
 }
 
-.app {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-}
